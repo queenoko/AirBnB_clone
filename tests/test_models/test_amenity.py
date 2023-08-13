@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines unittests for models/amenity.py.
+"""Defines the  unittests for models/amenity.py...
 
 Unittest classes:
     TestAmenity_instantiation
@@ -15,7 +15,7 @@ from models.amenity import Amenity
 
 
 class TestAmenity_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Amenity class."""
+    """Unittest for the testing instantiation of Amenity class..."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(Amenity, type(Amenity()))
@@ -69,7 +69,7 @@ class TestAmenity_instantiation(unittest.TestCase):
         self.assertNotIn(None, am.__dict__.values())
 
     def test_instantiation_with_kwargs(self):
-        """instantiation with kwargs test method"""
+        """instantiation of the kwargs test method"""
         dt = datetime.today()
         dt_iso = dt.isoformat()
         am = Amenity(id="345", created_at=dt_iso, updated_at=dt_iso)
@@ -83,7 +83,7 @@ class TestAmenity_instantiation(unittest.TestCase):
 
 
 class TestAmenity_save(unittest.TestCase):
-    """Unittests for testing save method of the Amenity class."""
+    """Unittests for testing save method of Amenity class."""
 
     @classmethod
     def setUp(self):
