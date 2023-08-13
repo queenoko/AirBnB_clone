@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines unittests for models/city.py.
+"""Defines the unittests for models/city.py...
 
 Unittest classes:
     TestCity_instantiation
@@ -15,7 +15,7 @@ from models.city import City
 
 
 class TestCity_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the City class."""
+    """Unittests for testing the instantiation of City class."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(City, type(City()))
@@ -91,7 +91,7 @@ class TestCity_instantiation(unittest.TestCase):
 
 
 class TestCity_save(unittest.TestCase):
-    """Unittests for testing save method of the City class."""
+    """Unittests for testing save method of City class..."""
 
     @classmethod
     def setUp(self):
