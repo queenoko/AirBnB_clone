@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Defines unittests for models/review.py.
+"""Defines the  unittests for models/review.py...
 
-Unittest classes:
+Unittest classes and attributes:
     TestReview_instantiation
     TestReview_save
     TestReview_to_dict
@@ -15,7 +15,7 @@ from models.review import Review
 
 
 class TestReview_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Review class."""
+    """Unittest for the testing instantiation of Review class."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(Review, type(Review()))
@@ -97,7 +97,7 @@ class TestReview_instantiation(unittest.TestCase):
 
 
 class TestReview_save(unittest.TestCase):
-    """Unittests for testing save method of the Review class."""
+    """Unittests for the testing of  save method of Review class."""
 
     @classmethod
     def setUp(self):
@@ -148,7 +148,7 @@ class TestReview_save(unittest.TestCase):
 
 
 class TestReview_to_dict(unittest.TestCase):
-    """Unittests for testing to_dict method of the Review class."""
+    """Unittest for the testing to_dict method of Review class."""
 
     def test_to_dict_type(self):
         self.assertTrue(dict, type(Review().to_dict()))
