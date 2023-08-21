@@ -1,0 +1,14 @@
+/*
+ * === The Footer styling ===
+ */
+
+/* Footer stylinfg */
+footer {
+  align-items: center;
+  background-color: #00ff00;
+  border-top: 1px solid #ccc;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+}
