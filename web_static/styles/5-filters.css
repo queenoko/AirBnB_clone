@@ -2,9 +2,16 @@
  * === This is the Filters class style ===
  */
 
+ /* Search bar style... */
+ div.container {
+  text-align: center;
+  max-width: 1000px;
+  margin: 30px auto;
+ }
+
 /* Filters style... */
-.filters {
-  background-color: #ffffff;
+section.filters {
+  background-color: white;
   border: 1px solid #dddddd;
   border-radius: 4px;
   height: 70px;
@@ -12,27 +19,27 @@
 }
 
 /* Search button style */
-.filters button {
-  background: #ff5a5f;
-  border: none;
+section.filters button {
+  background-color: #ff5a5f;
+  border: 0;
   border-radius: 4px;
   color: #ffffff;
   float: right;
   font-size: 18px;
   height: 48px;
-  margin: 12px 30px;
+  margin: 11px 30px;
   width: 20%;
 }
 
 /* Search button hover opacity */
-.filters button:hover {
-  background-color: rgba(255, 90, 95, .9);
+section.filters button:hover {
+  opacity: .9;
 }
 
 /* Locations and amenities style */
 .locations,
 .amenities {
-  display: inline-block;
+  float: left;
   height: 100%;
   width: 25%;
 }
@@ -47,26 +54,22 @@
  */
 
 /* Header box sizing */
-.filters h2,
-.filters h3,
-.filters h4 {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Header 3 style */
-.filters h3 {
-  font-size: 1.17em;
+.locations h3,
+.amenities h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 16px;
   font-weight: 600;
-  height: 50%;
-  padding: 15.5px 0 0 30px;
+  margin-left: 30px;
+  text-align: left;
 }
 
-/* Header 4 style */
-.filters h4 {
+.locations h4,
+.amenities h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
-  height: 50%;
-  padding: 4.5px 0 12px 30px;
+  margin-left: 30px;
+  text-align: left;
 }

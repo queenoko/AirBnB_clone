@@ -4,8 +4,11 @@
 
 /* The Header style */
 header {
-  background: #ffffff url('../images/logo.png') 20px center no-repeat;
+  background-image: url('../images/logo.png');
   border-bottom: 1px solid #cccccc;
+  background-color: white;
+  background-position: 20px 50%;
   height: 70px;
   width: 100%;
+  background-repeat: no-repeat;
 }

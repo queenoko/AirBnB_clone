@@ -5,5 +5,8 @@
 /* Body styling */
 body {
   color: #484848;
-  font: 14px Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
