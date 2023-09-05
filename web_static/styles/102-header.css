@@ -1,0 +1,126 @@
+/* Header styling  */
+/* @media only screen and (max-width: 600px) */
+header {
+    background-image: url(../images/logo.png);
+    z-index: 4;
+    color: #fff;
+    height: 3.5rem;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    text-align: left;
+  }
+
+  /* rotate burguer */
+  
+  .main_nav_burguer {
+    margin: .6rem 0 0 1rem;
+    transform: rotate(90deg);
+    display: inline-block;
+    font-size: 2rem;
+    transition: .2s ease-in-out;
+    font-weight: bolder;
+    color: lightslategray;
+  }
+  
+  .main_nav_burguer:hover {
+    cursor: pointer;
+    transform: rotate(0deg);
+    color: silver;
+    transition: .2s ease-in-out;
+  }
+  #main_check:checked {
+    cursor: pointer;
+    transform: rotate(0deg);
+    color: silver;
+    transition: .2s ease-in-out;
+  }
+  
+  
+  /* popup first level menu */
+  .nav_bar_level1 {
+    width: 0%;
+    height: 0%;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+    background-color: aliceblue;
+  }
+  /* This hide checkbox */
+  input {
+    display: none;
+  }
+  /* This hide second level */
+  .nav_bar_level1 li ul {
+    display: none;
+  }
+  
+  /* This hide first level */
+  .nav_bar_level1 li{
+    display: none;
+  }
+  
+  /* This display first level */
+  #main_check:checked ~ * .nav_bar_level1 {
+    display: block;
+  }
+  /* This display first level title*/
+  #main_check:checked ~ * .nav_bar_level1 li {
+    display: block;
+    font-size: 1.3rem;
+    color: lightslategray;
+    margin: .5rem;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+  }
+  /* This hovers link menu */
+  .nav_bar_level1 li label span:hover,
+  ul li span:hover
+   {
+    background-color: #434343;
+    width: 100%;
+    padding: .2rem 1rem;
+    border-radius: 4px;
+    color: #FAFAFA;
+    cursor: pointer;
+  }
+  /* THis display first level background */
+  #main_check:checked ~ * .nav_bar_level1
+  {
+    transition: .3s ease-in-out;
+    display: block;
+    margin: 1rem;
+    padding: .8rem;
+    flex-direction: column;
+    width: 50vw;
+    transition: 1s ease-in-out;
+  }
+  
+  /* This display second level */
+  #second_check:checked  + ul{
+    display: block;
+  }
+  #third_check:checked  + ul{
+    display: block;
+  }
+  /* Small devices  */
+  @media only screen and (min-width: 600px) {
+  
+  }
+  /* Medium devices */
+  @media only screen and (min-width: 768px) {
+    header {
+        background-position: left;
+        background-position-x: 1rem;
+    }
+    .mobile_nav {
+      display: none;
+    }
+  }
+  /* Large devices */
+  @media only screen and (min-width: 992px) {
+  
+  }
+  
