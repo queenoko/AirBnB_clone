@@ -1,0 +1,136 @@
+/* header styles..... */
+/* Extra small devices */
+header {
+    background-position: center;
+    z-index: 4;
+    height: 3.5rem;
+    color: #fff;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    float: left;
+    text-align: left;
+  }
+  
+  /* rotate burguer */
+  
+  .main_nav_burguer {
+    transform: rotate(90deg);
+    margin: .6rem 0 0 1rem;
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: bolder;
+    color: lightslategray;
+    transition: .2s ease-in-out;
+  }
+  
+  .main_nav_burguer:hover {
+    transition: .2s ease-in-out;
+    transform: rotate(0deg);
+    cursor: pointer;
+    color: silver;
+  }
+  
+  /* accesibility focus ARIA */
+  .main_nav_burguer:focus {
+    background-color: antiquewhite;
+  }
+  
+  #main_check:checked {
+    cursor: pointer;
+    transform: rotate(0deg);
+    color: silver;
+    transition: .2s ease-in-out;
+  }
+  
+  /* popup first level menu */
+  
+  .nav_bar_level1 {
+    width: 0%;
+    height: 0%;
+    border-radius: 4px;
+    transition: .2s ease-in-out;
+    background-color: aliceblue;
+  }
+  /* hide checkbox */
+  input {
+    display: none;
+  }
+  /* hide second level */
+  .nav_bar_level1 li ul {
+    display: none;
+  }
+
+   /* display first level */
+   #main_check:checked ~ * .nav_bar_level1 {
+    display: block;
+  }
+  
+  /* hide first level */
+  .nav_bar_level1 li{
+    display: none;
+  }
+  
+ 
+  /* display first level title*/
+  #main_check:checked ~ * .nav_bar_level1 li {
+    color: lightslategray;
+    display: block;
+    font-size: 1.3rem;
+    margin: .5rem;
+    transition: .5s ease-in-out;
+    font-weight: bold;
+  }
+  /* hover link menu */
+  .nav_bar_level1 li label span:hover,
+  ul li span:hover
+   {
+    background-color: #434343;
+    display: inline-block;
+    width: 100%;
+    padding: .2rem 1rem;
+    border-radius: 4px;
+    color: #fafafa;
+    cursor: pointer;
+  }
+  /* display first level background */
+  #main_check:checked ~ * .nav_bar_level1
+  {
+    display: block;
+    margin: 1rem;
+    padding: .8rem;
+    flex-direction: column;
+    transition: .3s ease-in-out;
+    width: 50vw;
+  }
+  
+  /*display second level */
+  #second_check:checked  + ul{
+    display: block;
+  }
+  #third_check:checked  + ul{
+    display: block;
+  }
+
+  /* Large devices */
+  @media only screen and (min-width: 992px) {
+  
+}
+  /* Small devices*/
+  @media only screen and (min-width: 600px) {
+  
+  }
+  /* Medium devices */
+  @media only screen and (min-width: 768px) {
+    header {
+        background-position: left;
+        background-position-x: 1rem;
+    }
+    .mobile_nav {
+      display: none;
+    }
+  }
+  
+  

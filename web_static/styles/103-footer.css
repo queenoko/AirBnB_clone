@@ -1,0 +1,35 @@
+/* footer style */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* footer styles */
+footer {
+    justify-content: center;
+    clear: left;
+    height: 60px;
+    width: 100%;
+    flex-direction: column;
+    border-top: 1px solid #cccccc;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+}
+
+footer p {
+  color: #484848;
+  text-align: center;
+}

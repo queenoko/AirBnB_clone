@@ -10,45 +10,45 @@
     <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
     <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
     <link rel="stylesheet" type="text/css" href="styles/101-places.css">
-    <link rel="stylesheet" type="text/css" href="styles/102-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/102-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/102-footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/102-filters.css">
-    <link rel="stylesheet" type="text/css" href="styles/102-places.css">
+    <link rel="stylesheet" type="text/css" href="styles/103-common.css">
+    <link rel="stylesheet" type="text/css" href="styles/103-header.css">
+    <link rel="stylesheet" type="text/css" href="styles/103-footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/103-filters.css">
+    <link rel="stylesheet" type="text/css" href="styles/103-places.css">
     
   </head>
   <body>
     <header>
-      <div class="mobile_nav">
-        <label for="main_check" class="main_nav_burguer">|||</label>
-        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check">
-          <nav>
-              <ul class="nav_bar_level1">
-                <li>
-                    <label for="second_check"><span>States</span></label>
-                    <input type="checkbox" name="second_check" id="second_check">
-                  <ul>
-                    <li><span>Arizona</span></li>
-                    <li><span>California</span></li>
-                  </ul>
-                  </li>
-                <li>
-                  <label for="third_check"><span>Amenities</span></label>
-                  <input type="checkbox" name="second_check" id="third_check">
-                  <ul>
-                    <li><span>Internet</span></li>
-                    <li><span>Tv</span></li>
-                    <li><span>Wifi</span></li>
-                    <li><span>Kitchen</span></li>
-                    <li><span>Iron</span></li>
-                  </ul>
-                  </li>
-              </ul>
-        </nav><!-- final del main_nav_bar -->
-      </div>
-    </header>
+        <div class="mobile_nav" role="navigation" aria-label="Navigate through site content">
+          <label for="main_check" class="main_nav_burguer" aria-label="Responsive popup menu">|||</label>
+          <input type="checkbox" id="main_check" name="main_check" class="main_nav_check" aria-hidden="true" tabindex=0>
+            <nav>
+                <ul class="nav_bar_level1">
+                  <li>
+                      <label for="second_check"><span>States</span></label>
+                      <input type="checkbox" name="second_check" id="second_check" aria-hidden="true">
+                    <ul>
+                      <li><span>Arizona</span></li>
+                      <li><span>California</span></li>
+                    </ul>
+                    </li>
+                  <li>
+                    <label for="third_check"><span>Amenities</span></label>
+                    <input type="checkbox" name="second_check" id="third_check" aria-hidden="true">
+                    <ul>
+                      <li><span>Internet</span></li>
+                      <li><span>Tv</span></li>
+                      <li><span>Wifi</span></li>
+                      <li><span>Kitchen</span></li>
+                      <li><span>Iron</span></li>
+                    </ul>
+                    </li>
+                </ul>
+          </nav><!-- final del main_nav_bar -->
+        </div>
+      </header>
     <div class="container">
-      <section class="filters">
+      <section class="filters" role="navigation">
         <div class="locations">
           <h3>States</h3>
           <h4>California, Arizona...</h4>
@@ -335,7 +335,7 @@
 
         </section> <!-- end section -->
     </div>
-    <footer>
+    <footer aria-label="Footer brand information">
       <p>Best School</p>
     </footer>
   </body>
